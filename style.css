@@ -748,3 +748,17 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     display:block;
   }
 }
+
+.site-footer{background:#171914;color:#f3efe5;border-top:1px solid rgba(255,255,255,.12)}
+.footer-inner{max-width:var(--max);margin:auto;padding:34px 28px 42px;display:grid;grid-template-columns:1fr auto auto;gap:28px;align-items:center}
+.footer-brand{font-family:"Space Grotesk",sans-serif;font-weight:700;letter-spacing:.02em}
+.footer-brand span{font-weight:500;opacity:.7}
+.footer-nav{display:flex;gap:22px;flex-wrap:wrap}
+.footer-nav a{opacity:.78}
+.footer-nav a:hover{opacity:1}
+.footer-copy{font-size:.86rem;opacity:.55;white-space:nowrap}
+.legal-page{min-height:72vh;max-width:900px;margin:auto;padding:72px 28px 110px}
+.legal-page h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(3rem,7vw,6rem);line-height:.95;letter-spacing:-.05em;margin:.2em 0 .5em}
+.legal-page p{max-width:720px;font-size:1.08rem}
+.legal-back{display:inline-block;margin-bottom:42px;font-weight:600;opacity:.7}
+@media(max-width:820px){.footer-inner{grid-template-columns:1fr;gap:18px}.footer-nav{gap:18px}}
