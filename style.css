@@ -273,3 +273,124 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     border-bottom:0;
   }
 }
+
+
+.landing-title-top{
+  top:9vh;
+  bottom:auto;
+}
+.landing-quote{
+  position:absolute;
+  z-index:1;
+  left:4.5%;
+  bottom:128px;
+  max-width:780px;
+  color:white;
+  text-shadow:0 2px 14px rgba(0,0,0,.38);
+}
+.landing-quote p{
+  margin:0 0 6px;
+  font-size:clamp(1rem,1.5vw,1.25rem);
+}
+.landing-quote strong{
+  display:block;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(1.5rem,2.7vw,2.7rem);
+  line-height:1.08;
+  max-width:850px;
+}
+.values-section{
+  max-width:var(--max);
+  margin:auto;
+  padding:100px 28px 120px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:80px;
+}
+.values-section p{font-size:1.08rem}
+.method-list{font-weight:600;line-height:1.9}
+
+.content-page{min-height:100vh}
+.page-top{
+  min-height:58vh;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+.page-top::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.12) 45%,rgba(0,0,0,.38));
+}
+.top-tabs{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  background:rgba(15,15,12,.32);
+  backdrop-filter:blur(7px);
+  -webkit-backdrop-filter:blur(7px);
+  border-bottom:1px solid rgba(255,255,255,.28);
+}
+.top-tabs a{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  color:white;
+  font-family:"Space Grotesk",sans-serif;
+  font-weight:600;
+  border-right:1px solid rgba(255,255,255,.24);
+}
+.top-tabs a:last-child{border-right:0}
+.top-tabs a:hover{background:rgba(255,255,255,.13)}
+.page-heading{
+  position:relative;
+  z-index:1;
+  max-width:var(--max);
+  margin:auto;
+  padding:72px 28px 60px;
+}
+.page-heading h1{
+  margin:0 0 24px;
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(3.6rem,8vw,7.4rem);
+  line-height:.95;
+  letter-spacing:-.055em;
+}
+.page-quote{
+  max-width:850px;
+  margin:0;
+  font-size:clamp(1.2rem,2vw,1.7rem);
+  line-height:1.35;
+}
+.page-content{
+  max-width:var(--max);
+  margin:auto;
+  padding:80px 28px 110px;
+}
+.content-block{max-width:820px}
+.content-block h2{font-size:clamp(2.2rem,4.4vw,4rem)}
+.content-block p{font-size:1.12rem}
+.compact-prices{margin-top:10px}
+
+@media(max-width:820px){
+  .landing-title-top{
+    top:7vh;
+    bottom:auto;
+  }
+  .landing-quote{
+    left:5%;
+    right:5%;
+    bottom:150px;
+  }
+  .values-section{grid-template-columns:1fr;gap:42px}
+  .top-tabs{grid-template-columns:1fr 1fr}
+  .top-tabs a{min-height:58px}
+  .top-tabs a:nth-child(2){border-right:0}
+  .page-top{min-height:64vh}
+  .page-heading{padding-top:50px}
+}
