@@ -707,3 +707,44 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     padding:28px 22px;
   }
 }
+
+
+/* v5: Aquarelle vollständig sichtbar + Preistext rechts */
+.watercolor-content{
+  min-height:clamp(760px,68vw,1180px) !important;
+  background-size:100% auto !important;
+  background-position:center top !important;
+  background-repeat:no-repeat !important;
+}
+.watercolor-wash{
+  background:rgba(243,239,229,.46) !important;
+}
+.price-copy{
+  margin-left:auto;
+  width:min(620px,48vw);
+  max-width:100%;
+  background:transparent !important;
+  padding:34px 0 60px !important;
+}
+.watercolor-prices .watercolor-wash{
+  background:rgba(243,239,229,.24) !important;
+}
+.watercolor-prices .content-inner{
+  display:flex;
+  justify-content:flex-end;
+}
+@media(max-width:820px){
+  .watercolor-content{
+    min-height:1100px !important;
+    background-size:auto 100% !important;
+    background-position:center top !important;
+  }
+  .price-copy{
+    width:100%;
+    margin-left:0;
+    padding:28px 0 48px !important;
+  }
+  .watercolor-prices .content-inner{
+    display:block;
+  }
+}
