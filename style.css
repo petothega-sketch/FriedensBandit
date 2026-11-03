@@ -572,3 +572,109 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     padding:28px 0;
   }
 }
+
+
+/* v3: Banditen-Seitentitel + Bildpaare */
+.bandit-title h1 span{
+  font-size:.34em;
+  font-weight:500;
+  letter-spacing:.01em;
+  white-space:nowrap;
+}
+
+.hero-mediation{
+  background-image:url("mediation_waldschrat.jpg") !important;
+}
+.hero-moderation{
+  background-image:url("carrd_hintergrund_4.png") !important;
+}
+.hero-prozess{
+  background-image:url("carrd_hintergrund_3.png") !important;
+}
+.hero-preise{
+  background-image:url("prozessbegleitung_joker.jpg") !important;
+}
+
+.watercolor-content{
+  position:relative;
+  max-width:none;
+  min-height:72vh;
+  margin:0;
+  padding:0;
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+.watercolor-wash{
+  position:absolute;
+  inset:0;
+  background:rgba(243,239,229,.76);
+  backdrop-filter:blur(.4px);
+  -webkit-backdrop-filter:blur(.4px);
+}
+.content-inner{
+  position:relative;
+  z-index:1;
+  width:min(var(--max),calc(100% - 56px));
+  margin:auto;
+  padding:90px 0 120px;
+}
+.values-inner{
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:80px;
+}
+.watercolor-values{
+  background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_30-5.png");
+}
+.watercolor-mediation{
+  background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_28-3.png");
+}
+.watercolor-moderation{
+  background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_13-2.png");
+}
+.watercolor-process{
+  background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_12-1.png");
+}
+.watercolor-prices{
+  background-image:url("Roter Wimpel am Berggrat.png");
+}
+.new-prices{
+  background:rgba(243,239,229,.55);
+  padding:0 28px;
+}
+.new-prices .price-row{
+  grid-template-columns:minmax(320px,.9fr) 1.1fr;
+}
+.new-prices .price-row strong{
+  font-size:clamp(2rem,3.5vw,3.5rem);
+}
+.new-prices .price-row:nth-child(3) strong,
+.new-prices .price-row:nth-child(4) strong,
+.new-prices .price-row:nth-child(5) strong{
+  font-size:clamp(1.7rem,2.7vw,2.5rem);
+}
+
+@media(max-width:820px){
+  .bandit-title h1 span{
+    display:block;
+    margin-top:.25rem;
+    font-size:.38em;
+    white-space:normal;
+  }
+  .content-inner{
+    width:calc(100% - 40px);
+    padding:64px 0 84px;
+  }
+  .values-inner{
+    grid-template-columns:1fr;
+    gap:42px;
+  }
+  .new-prices{
+    padding:0 18px;
+  }
+  .new-prices .price-row{
+    grid-template-columns:1fr;
+  }
+}
