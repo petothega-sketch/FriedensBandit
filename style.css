@@ -820,3 +820,49 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     padding:14px 20px !important;
   }
 }
+
+/* v8: Footer wirklich viewport-breit + Bild direkt bis zum Footer */
+html,body{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+main{
+  margin:0;
+  padding:0;
+}
+.site-footer{
+  position:relative !important;
+  left:50% !important;
+  right:50% !important;
+  margin-left:-50vw !important;
+  margin-right:-50vw !important;
+  width:100vw !important;
+  max-width:100vw !important;
+  padding:0 !important;
+  background:#171914 !important;
+}
+.compact-footer{
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:14px 28px !important;
+}
+.watercolor-content{
+  margin:0 !important;
+  padding:0 !important;
+  min-height:0 !important;
+  height:auto !important;
+  background-size:100% auto !important;
+  background-position:center top !important;
+}
+.watercolor-content .content-inner{
+  margin:0 auto !important;
+  padding-top:70px !important;
+  padding-bottom:40px !important;
+}
+.watercolor-content::after{
+  content:"";
+  display:block;
+  clear:both;
+}
