@@ -505,3 +505,70 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 60px;display:flex;just
     border-bottom:0;
   }
 }
+
+
+/* Preisauflistung ohne Karten */
+.price-list{
+  width:100%;
+  border-top:1px solid var(--line);
+}
+.price-row{
+  display:grid;
+  grid-template-columns:minmax(280px,.85fr) 1.15fr;
+  gap:56px;
+  align-items:center;
+  padding:34px 0;
+  border-bottom:1px solid var(--line);
+}
+.price-row>div{
+  display:grid;
+  grid-template-columns:auto auto;
+  align-items:end;
+  justify-content:start;
+  column-gap:12px;
+  row-gap:6px;
+}
+.price-kicker{
+  grid-column:1 / -1;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.76rem;
+  font-weight:700;
+}
+.price-row strong{
+  font-family:"Space Grotesk",sans-serif;
+  font-size:clamp(2.3rem,4vw,4rem);
+  line-height:1;
+  letter-spacing:-.045em;
+}
+.price-row small{
+  font-size:1rem;
+  opacity:.62;
+  padding-bottom:.35rem;
+}
+.price-row p{
+  margin:0;
+  max-width:620px;
+  font-size:1.08rem;
+}
+.travel-row strong{
+  font-size:clamp(1.7rem,3vw,2.6rem);
+}
+
+/* robust gegen alte Browser-/Cache-Zustände */
+.unified-hero{
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+  background-position:center center !important;
+}
+.hero-preise{
+  background-image:url("preise_koenig.jpg") !important;
+}
+
+@media(max-width:820px){
+  .price-row{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:28px 0;
+  }
+}
