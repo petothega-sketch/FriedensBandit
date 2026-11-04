@@ -978,3 +978,41 @@ main{
     min-height:125vw !important;
   }
 }
+
+
+/* Figuren v4: Höhe pro Seite statt pauschal */
+.watercolor-values,
+.watercolor-mediation{
+  min-height:58vw !important;
+}
+.watercolor-values .content-inner,
+.watercolor-mediation .content-inner{
+  min-height:58vw !important;
+  padding-bottom:64px !important;
+}
+
+.watercolor-moderation,
+.watercolor-process{
+  min-height:96vw !important;
+}
+.watercolor-moderation .content-inner,
+.watercolor-process .content-inner{
+  min-height:96vw !important;
+  padding-bottom:130px !important;
+}
+
+@media(max-width:820px){
+  .watercolor-values,
+  .watercolor-mediation,
+  .watercolor-values .content-inner,
+  .watercolor-mediation .content-inner{
+    min-height:92vw !important;
+  }
+
+  .watercolor-moderation,
+  .watercolor-process,
+  .watercolor-moderation .content-inner,
+  .watercolor-process .content-inner{
+    min-height:145vw !important;
+  }
+}
