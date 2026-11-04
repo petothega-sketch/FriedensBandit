@@ -1208,7 +1208,7 @@ main{
     grid-column:1 / -1 !important;
     grid-row:1 !important;
     justify-self:start !important;
-    width:75% !important;
+    width:100% !important;
     min-height:56px !important;
     padding:12px 18px !important;
     font-size:clamp(1.1rem,5vw,1.5rem) !important;
@@ -1220,10 +1220,10 @@ main{
   .hero-values .unified-tabs a:last-child {
     grid-column:2 !important;
     grid-row:3 !important;
-    justify-self:end !important;
-    width:min(100%,100px) !important;
+    justify-self:stretch !important;
+    width:100% !important;
     min-height:44px !important;
-    font-size:.82rem !important;
-    background:rgba(23,25,20,.55) !important;
+    font-size:clamp(.78rem,3.25vw,.96rem) !important;
+    background:rgba(23,25,20,.64) !important;
   }
 }
