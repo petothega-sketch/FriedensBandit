@@ -960,3 +960,21 @@ main{
     min-height:100vw !important;
   }
 }
+
+
+/* Figuren v3: unteren Bildbereich weiter öffnen */
+.watercolor-content{
+  min-height:82vw !important;
+  background-size:100% auto !important;
+  background-position:center top !important;
+}
+.watercolor-content .content-inner{
+  min-height:82vw !important;
+  padding-bottom:120px !important;
+}
+@media(max-width:820px){
+  .watercolor-content,
+  .watercolor-content .content-inner{
+    min-height:125vw !important;
+  }
+}
