@@ -1492,3 +1492,19 @@ main{
     border-radius:0 !important;
   }
 }
+
+/* Desktop: Preistexte frueher beginnen lassen und kompakter halten. */
+@media (min-width: 821px) {
+  .watercolor-prices .content-inner {
+    padding-top: 12px !important;
+  }
+  .watercolor-prices .price-copy {
+    padding-top: 0 !important;
+  }
+  .watercolor-prices .price-copy p {
+    margin-bottom: 16px;
+  }
+  .watercolor-prices .price-copy p:last-child {
+    margin-bottom: 0;
+  }
+}
