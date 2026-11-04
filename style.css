@@ -876,3 +876,13 @@ main{
   object-fit:contain !important;
   flex:0 0 34px !important;
 }
+
+.footer-symbol{
+  display:block !important;
+  width:42px !important;
+  height:42px !important;
+  max-height:42px !important;
+  object-fit:contain !important;
+  flex:0 0 42px !important;
+  opacity:1 !important;
+}
