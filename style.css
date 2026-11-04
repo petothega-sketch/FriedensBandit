@@ -881,3 +881,17 @@ main{
     height:34px;
   }
 }
+
+/* Figuren-Zuordnung korrigiert nach finaler Bildliste */
+.footer-symbol{
+  width:auto !important;
+  height:1.35em !important;
+  max-height:24px !important;
+  object-fit:contain !important;
+  flex:0 0 auto !important;
+  margin-right:2px !important;
+  opacity:1 !important;
+}
+.compact-footer{
+  align-items:center !important;
+}
