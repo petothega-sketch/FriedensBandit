@@ -1437,3 +1437,7 @@ main{
     background-size:100% auto !important;
   }
 }
+
+/* Vorhandene Dateien statt nicht existierender Bildnamen verwenden. */
+.hero-moderation { background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_31-6.png") !important; }
+.watercolor-process { background-image:url("Verwitterte Wand mit rotem Herz und Miniaturzeichnung.png") !important; }
