@@ -1397,3 +1397,19 @@ main{
     gap:34px !important;
   }
 }
+
+
+/* Clean Tablet 820px: Bild und Einleitung enger zusammenruecken.
+   Nur Mediation, Moderation und Teamentwicklung; Desktop und Mobil unberuehrt. */
+@media (min-width:819px) and (max-width:821px) {
+  .hero-mediation.unified-hero,
+  .hero-moderation.unified-hero,
+  .hero-prozess.unified-hero {
+    padding-top:40vw !important;
+  }
+  .hero-mediation .unified-copy,
+  .hero-moderation .unified-copy,
+  .hero-prozess .unified-copy {
+    padding-top:18px !important;
+  }
+}
