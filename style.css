@@ -886,3 +886,126 @@ main{
   flex:0 0 42px !important;
   opacity:1 !important;
 }
+
+
+/* Mobile Layout 2026-11-04: komplette Aquarellmotive vor dem Text zeigen.
+   Nur kleine Viewports, Desktop bleibt unveraendert. */
+@media (max-width: 600px) {
+  html, body { width:100%; max-width:100%; overflow-x:clip; }
+  .unified-hero {
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-start !important;
+    min-height:0 !important;
+    height:auto !important;
+    overflow:visible !important;
+    padding:66.667vw 0 0 !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+    background-color:#f3efe5 !important;
+    color:#171914 !important;
+  }
+  .unified-overlay { display:none !important; }
+  .unified-copy, .unified-copy.bandit-title {
+    position:relative !important;
+    inset:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    top:auto !important;
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:22px 20px 24px !important;
+    background:#f3efe5 !important;
+    color:#171914 !important;
+    text-align:left !important;
+  }
+  .unified-copy h1, .bandit-title h1 {
+    margin:0 0 12px !important;
+    font-size:clamp(2rem,9vw,3rem) !important;
+    line-height:1.05 !important;
+    letter-spacing:-.045em !important;
+    overflow-wrap:anywhere;
+    text-shadow:none !important;
+  }
+  .unified-copy h1 span, .bandit-title h1 span {
+    display:block !important;
+    font-size:.48em !important;
+    line-height:1.3 !important;
+    white-space:normal !important;
+    letter-spacing:0 !important;
+    margin-top:5px !important;
+  }
+  .unified-copy p {
+    margin:0 !important;
+    max-width:40rem !important;
+    font-size:1rem !important;
+    line-height:1.5 !important;
+    color:#171914 !important;
+    text-shadow:none !important;
+  }
+  .unified-tabs {
+    position:relative !important;
+    inset:auto !important;
+    left:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    width:100% !important;
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    background:#26372d !important;
+    border-top:0 !important;
+    backdrop-filter:none !important;
+    -webkit-backdrop-filter:none !important;
+  }
+  .unified-tabs a {
+    min-width:0;
+    min-height:52px !important;
+    padding:12px 8px !important;
+    font-size:.9rem !important;
+    line-height:1.25 !important;
+    text-align:center !important;
+    border-bottom:1px solid rgba(255,255,255,.22) !important;
+    overflow-wrap:break-word;
+  }
+  .unified-tabs a:nth-child(even) { border-right:0 !important; }
+  .unified-tabs a:last-child { grid-column:1 / -1 !important; border-bottom:0 !important; }
+  .watercolor-content {
+    display:block !important;
+    min-height:0 !important;
+    height:auto !important;
+    overflow:visible !important;
+    padding:66.667vw 0 0 !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+    background-color:#f3efe5 !important;
+  }
+  .watercolor-content .watercolor-wash { display:none !important; }
+  .watercolor-content .content-inner,
+  .watercolor-values .content-inner,
+  .watercolor-mediation .content-inner,
+  .watercolor-moderation .content-inner,
+  .watercolor-process .content-inner,
+  .watercolor-prices .content-inner {
+    width:100% !important;
+    min-height:0 !important;
+    height:auto !important;
+    margin:0 !important;
+    padding:32px 20px 44px !important;
+    background:#f3efe5 !important;
+  }
+  .watercolor-content .content-inner h2 {
+    font-size:clamp(1.9rem,8vw,2.7rem) !important;
+    line-height:1.1 !important;
+    overflow-wrap:break-word;
+  }
+  .watercolor-content .content-inner p { font-size:1rem !important; line-height:1.6 !important; }
+  .values-section { display:block !important; }
+  .values-section .content-inner { display:grid !important; grid-template-columns:minmax(0,1fr) !important; gap:22px !important; }
+  .price-copy { width:100% !important; max-width:100% !important; }
+  .site-footer { left:auto !important; right:auto !important; margin:0 !important; width:100% !important; max-width:100% !important; }
+  .compact-footer { padding:22px 20px !important; gap:10px 16px !important; justify-content:flex-start !important; }
+}
