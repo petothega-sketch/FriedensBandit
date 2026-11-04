@@ -1596,3 +1596,79 @@ main{
 
 /* Bildkorrektur: Moderation oben mit dem Waldwanderer der Figurenserie. */
 .hero-moderation { background-image:url("Wanderer im goldenen Waldlicht.png") !important; }
+
+/* Figuren Tablet 820px: Bild und Einleitung enger zusammenruecken.
+   Nur Mediation, Moderation und Teamentwicklung; Desktop und Mobil unberuehrt. */
+@media (min-width:819px) and (max-width:821px) {
+  .hero-mediation.unified-hero,
+  .hero-moderation.unified-hero,
+  .hero-prozess.unified-hero {
+    padding-top:40vw !important;
+  }
+  .hero-mediation .unified-copy,
+  .hero-moderation .unified-copy,
+  .hero-prozess .unified-copy {
+    padding-top:18px !important;
+  }
+}
+
+
+/* Tablet-exklusive Ueberschriften. Desktop und Mobil behalten ihre Originaltitel. */
+.unified-copy h1.title-tablet { display:none !important; }
+
+/* Nur Figuren bei 820 CSS-Pixel Breite (Testformat 820 × 1180).
+   Bildflaechen kuerzen, damit kein Leerraum bis zum Text entsteht. */
+@media (min-width:819px) and (max-width:821px) {
+  .unified-copy h1.title-desktop {display:none !important;}
+  .unified-copy h1.title-tablet {
+    display:block !important;
+    font-family:"Space Grotesk",sans-serif !important;
+    font-size:clamp(2.8rem,6.5vw,5rem) !important;
+    line-height:1.05 !important;
+    letter-spacing:-.045em !important;
+    font-weight:700 !important;
+    white-space:nowrap !important;
+    overflow-wrap:normal !important;
+    margin:0 0 12px !important;
+  }
+  .unified-copy h1.title-tablet span {
+    display:inline !important;
+    font-size:.34em !important;
+    font-weight:500 !important;
+    letter-spacing:0 !important;
+    line-height:inherit !important;
+    white-space:nowrap !important;
+    margin:0 !important;
+    vertical-align:baseline !important;
+  }
+  .hero-values.unified-hero {
+    padding-top:50vw !important;
+  }
+  .watercolor-mediation,
+  .watercolor-moderation,
+  .watercolor-process {
+    padding-top:52vw !important;
+  }
+  .watercolor-mediation .content-inner,
+  .watercolor-moderation .content-inner,
+  .watercolor-process .content-inner {
+    padding-top:22px !important;
+  }
+}
+
+
+/* Figuren | 820px Tablet | Meine Werte: obere und untere Bild-Text-Luecke verkleinern. */
+@media (min-width:819px) and (max-width:821px) {
+  .hero-values.unified-hero {
+    padding-top:40vw !important;
+  }
+  .hero-values .unified-copy {
+    padding-top:18px !important;
+  }
+  .watercolor-values.watercolor-content {
+    padding-top:48vw !important;
+  }
+  .watercolor-values .content-inner {
+    padding-top:20px !important;
+  }
+}
