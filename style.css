@@ -1397,22 +1397,3 @@ main{
     gap:34px !important;
   }
 }
-
-
-/* Desktop-Bildkorrektur: werteseite sichtbar, Angebotsbilder nicht zu kurz. */
-@media (min-width:1025px) {
-  .hero-values.unified-hero {
-    min-height:66.667vw !important;
-    background-size:100% auto !important;
-    background-position:center top !important;
-    background-repeat:no-repeat !important;
-  }
-  .watercolor-mediation, .watercolor-moderation, .watercolor-process {
-    min-height:max(66.667vw,760px) !important;
-    background-size:100% auto !important;
-    background-position:center top !important;
-  }
-  .watercolor-mediation .content-inner, .watercolor-moderation .content-inner, .watercolor-process .content-inner {
-    min-height:max(66.667vw,760px) !important;
-  }
-}
