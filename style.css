@@ -1469,3 +1469,26 @@ main{
   }
   :root { --mobile-tabs-height:90px; }
 }
+
+
+/* Mobile Navigation v6: nur innere Trennlinien, kein Aussenrand. */
+@media (max-width:600px) {
+  :root { --mobile-tabs-height:89px; }
+  .unified-hero .unified-tabs,
+  .hero-values .unified-tabs {
+    padding:0 !important;
+    gap:1px !important;
+    height:89px !important;
+    grid-template-rows:44px 44px !important;
+    border:0 !important;
+    outline:0 !important;
+    box-shadow:none !important;
+  }
+  .unified-hero .unified-tabs a,
+  .hero-values .unified-tabs a {
+    border:0 !important;
+    outline:0 !important;
+    box-shadow:none !important;
+    border-radius:0 !important;
+  }
+}
