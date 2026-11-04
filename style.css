@@ -1324,3 +1324,32 @@ main{
     font-size:clamp(.76rem,3.25vw,.93rem) !important;
   }
 }
+
+
+/* Mobile Navigation v3: volle Displaybreite, Landschaft beginnt darunter. */
+@media (max-width:600px) {
+  :root { --mobile-tabs-height:144px; }
+  .unified-hero .unified-tabs {
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    width:100% !important;
+    max-width:none !important;
+    height:var(--mobile-tabs-height) !important;
+    grid-template-rows:48px 44px 44px !important;
+    gap:4px !important;
+    padding:0 !important;
+    margin:0 !important;
+    background:#26372d !important;
+  }
+  .unified-hero .unified-tabs a {
+    border-radius:0 !important;
+    box-shadow:none !important;
+  }
+  .unified-hero,
+  .hero-values.unified-hero {
+    padding-top:calc(var(--mobile-tabs-height) + 66.667vw) !important;
+    background-position:center var(--mobile-tabs-height) !important;
+    background-size:100% auto !important;
+  }
+}
