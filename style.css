@@ -1674,12 +1674,12 @@ main{
 }
 
 
-/* Tablet Figuren: Bildzuordnung mit den anderen Versionen abgleichen (2026-11-04) */
+/* Tablet Figuren: exakt dieselben Bilddateien wie Version-mobil */
 @media (min-width: 601px) and (max-width: 1024px) {
   .hero-moderation.unified-hero {
-    background-image: url("Wanderer im goldenen Waldlicht.png") !important;
+    background-image: url("ChatGPT-Bild 3. Nov. 2026, 22_51_31-6.png") !important;
   }
   .watercolor-process.page-content {
-    background-image: url("ChatGPT-Bild 3. Nov. 2026, 22_51_12-1.png") !important;
+    background-image: url("Verwitterte Wand mit rotem Herz und Miniaturzeichnung.png") !important;
   }
 }
