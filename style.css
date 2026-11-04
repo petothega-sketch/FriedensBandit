@@ -1596,3 +1596,35 @@ main{
 
 /* Bildkorrektur: Moderation oben mit dem Waldwanderer der Figurenserie. */
 .hero-moderation { background-image:url("Wanderer im goldenen Waldlicht.png") !important; }
+
+
+/* Desktop-Bildkorrektur: ausgewählte Bildflächen ohne Cover-Zuschnitt. */
+@media (min-width:1025px) {
+  .hero-values.unified-hero {
+    min-height:66.667vw !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+  }
+  .hero-mediation.unified-hero, .hero-prozess.unified-hero, .hero-preise.unified-hero {
+    min-height:66.667vw !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+  }
+  .watercolor-mediation, .watercolor-moderation {
+    min-height:0 !important;
+    height:auto !important;
+    padding-top:66.667vw !important;
+    background-size:100% auto !important;
+    background-position:center top !important;
+    overflow:visible !important;
+  }
+  .watercolor-mediation .content-inner, .watercolor-moderation .content-inner {
+    min-height:0 !important;
+    height:auto !important;
+    padding:46px max(28px,calc((100vw - 1180px)/2 + 28px)) 70px !important;
+    background:#f3efe5 !important;
+  }
+  .watercolor-mediation .watercolor-wash, .watercolor-moderation .watercolor-wash {display:none !important;}
+}
