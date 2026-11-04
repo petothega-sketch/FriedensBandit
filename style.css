@@ -1683,3 +1683,14 @@ main{
     background-image: url("Verwitterte Wand mit rotem Herz und Miniaturzeichnung.png") !important;
   }
 }
+
+
+/* Figuren Tablet: gezielte Bildzuordnung nach Referenzbildern 2026-11-04 */
+@media (min-width:601px) and (max-width:1024px) {
+  .hero-moderation.unified-hero {
+    background-image:url("Waldpfad mit wanderndem Linienmann.png") !important;
+  }
+  .watercolor-process.page-content {
+    background-image:url("Wasserfarben-Seefahrer am Sonnenuntergang.png") !important;
+  }
+}
