@@ -1457,3 +1457,20 @@ main{
     padding-top:22px !important;
   }
 }
+
+
+/* Clean | 820px Tablet | Meine Werte: obere und untere Bild-Text-Luecke verkleinern. */
+@media (min-width:819px) and (max-width:821px) {
+  .hero-values.unified-hero {
+    padding-top:40vw !important;
+  }
+  .hero-values .unified-copy {
+    padding-top:18px !important;
+  }
+  .watercolor-values.watercolor-content {
+    padding-top:48vw !important;
+  }
+  .watercolor-values .content-inner {
+    padding-top:20px !important;
+  }
+}
