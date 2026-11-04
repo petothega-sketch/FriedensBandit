@@ -895,3 +895,68 @@ main{
 .compact-footer{
   align-items:center !important;
 }
+
+
+/* Figuren v2: finale Topbilder erzwingen */
+.hero-values{
+  background-image:url("Verwitterte Wand mit rotem Herz und Miniaturzeichnung.png") !important;
+}
+.hero-mediation{
+  background-image:url("Meditativer Mann im sonnigen Waldkreis.png") !important;
+}
+.hero-moderation{
+  background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_32-7.png") !important;
+}
+.hero-prozess{
+  background-image:url("Kleiner Kapitän im goldenen Sonnenuntergang.png") !important;
+}
+.hero-preise{
+  background-image:url("Mann auf sonnigem Berggrat.png") !important;
+}
+
+/* Untere Figurenbilder vollständig zeigen */
+.watercolor-values{
+  background-image:url("Aquarellszene mit lachendem Maler.png") !important;
+}
+.watercolor-mediation{
+  background-image:url("Transparenter Meditationsmann im Waldlicht.png") !important;
+}
+.watercolor-moderation{
+  background-image:url("Wanderer im goldenen Waldlicht.png") !important;
+}
+.watercolor-process{
+  background-image:url("Herz, Wand und Linienfigur im Abendlicht.png") !important;
+}
+.watercolor-prices{
+  background-image:url("Mann im Abendlicht am Berg.png") !important;
+}
+.watercolor-content{
+  min-height:66.67vw !important;
+  height:auto !important;
+  background-size:100% auto !important;
+  background-position:center top !important;
+  background-repeat:no-repeat !important;
+}
+.watercolor-content .content-inner{
+  min-height:66.67vw !important;
+  padding-bottom:80px !important;
+}
+
+/* Footer-Signet sicher sichtbar */
+.footer-symbol{
+  display:block !important;
+  width:30px !important;
+  height:30px !important;
+  max-height:30px !important;
+  object-fit:contain !important;
+  flex:0 0 30px !important;
+  margin:0 4px 0 0 !important;
+  opacity:1 !important;
+}
+
+@media(max-width:820px){
+  .watercolor-content,
+  .watercolor-content .content-inner{
+    min-height:100vw !important;
+  }
+}
