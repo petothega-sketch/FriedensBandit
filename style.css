@@ -1270,3 +1270,29 @@ main{
     border-radius:0 !important;
   }
 }
+
+
+/* Clean Mobil: Reiter bleiben zwischen den Bildabschnitten im Dokumentfluss.
+   Sie scrollen normal mit der Seite; nur die Gestaltung entspricht Figuren. */
+@media (max-width:600px) {
+  .unified-hero,
+  .hero-values.unified-hero {
+    padding-top:66.667vw !important;
+    background-position:center top !important;
+    background-size:100% auto !important;
+  }
+  .unified-hero .unified-tabs,
+  .hero-values .unified-tabs {
+    position:relative !important;
+    inset:auto !important;
+    top:auto !important;
+    right:auto !important;
+    bottom:auto !important;
+    left:auto !important;
+    width:100% !important;
+    height:89px !important;
+    margin:0 !important;
+    z-index:auto !important;
+    flex-shrink:0 !important;
+  }
+}
