@@ -1441,3 +1441,31 @@ main{
 /* Vorhandene Dateien statt nicht existierender Bildnamen verwenden. */
 .hero-moderation { background-image:url("ChatGPT-Bild 3. Nov. 2026, 22_51_31-6.png") !important; }
 .watercolor-process { background-image:url("Verwitterte Wand mit rotem Herz und Miniaturzeichnung.png") !important; }
+
+
+/* Mobile Navigation v5: exakt einheitliche hauchduenne Trennlinien.
+   Ein einziger 1px-Gitterabstand statt ueberlagerter Button-Rahmen. */
+@media (max-width:600px) {
+  .unified-hero .unified-tabs,
+  .hero-values .unified-tabs {
+    gap:1px !important;
+    padding:1px !important;
+    background:#d4ccbb !important;
+    height:90px !important;
+    grid-template-rows:44px 44px !important;
+  }
+  .unified-hero .unified-tabs a,
+  .hero-values .unified-tabs a,
+  .unified-hero .unified-tabs a:first-child,
+  .hero-values .unified-tabs a:first-child,
+  .unified-hero .unified-tabs a:last-child,
+  .hero-values .unified-tabs a:last-child {
+    border:0 !important;
+    outline:0 !important;
+    border-radius:0 !important;
+    box-shadow:none !important;
+    height:44px !important;
+    min-height:44px !important;
+  }
+  :root { --mobile-tabs-height:90px; }
+}
