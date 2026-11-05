@@ -1877,3 +1877,42 @@ body {font-size:max(16px,1.05vw);}
     right:5% !important;
   }
 }
+
+
+/* Titelhierarchie Clean und Tablet: kleiner Bereich, grosser Haupttitel */
+@media (min-width:821px) {
+  .unified-hero .unified-copy h1.title-desktop {
+    display:block !important;
+    font-size:max(1.2rem,2vw) !important;
+    font-weight:500 !important;
+    line-height:1.1 !important;
+    letter-spacing:0 !important;
+  }
+  .unified-hero .unified-copy h1.title-desktop small {
+    display:inline !important;
+    font-size:1em !important;
+    font-weight:500 !important;
+    letter-spacing:0 !important;
+    white-space:nowrap !important;
+  }
+  .unified-hero .unified-copy h1.title-desktop span {
+    display:inline !important;
+    font-size:2.55em !important;
+    font-weight:700 !important;
+    line-height:1.05 !important;
+    letter-spacing:-.045em !important;
+    white-space:nowrap !important;
+    margin:0 !important;
+  }
+}
+@media (min-width:821px) and (max-width:1100px) {
+  .unified-hero .unified-copy h1.title-desktop span {
+    display:block !important;
+  }
+}
+/* Tablet zwischen 821 und 1024 nutzt absichtlich weiterhin die vorhandene
+   zweizeilige title-mobile-Variante (Bereich klein, Haupttitel gross). */
+@media (min-width:821px) and (max-width:1024px) {
+  .unified-hero .unified-copy h1.title-desktop { display:none !important; }
+  .unified-hero .unified-copy h1.title-mobile { display:block !important; }
+}
