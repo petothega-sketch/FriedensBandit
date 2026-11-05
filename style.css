@@ -1788,3 +1788,26 @@ body {font-size:max(16px,1.05vw);}
     display:block !important;
   }
 }
+
+
+/* Desktop Figuren: Text auf Titelbild, beide Bildbereiche transparenter. */
+@media (min-width:821px) {
+  .unified-hero,.hero-values.unified-hero { background-color:#f3efe5 !important; }
+  .unified-hero > img.responsive-full-image {
+    opacity:.62 !important;
+  }
+  .watercolor-content { background-color:#f3efe5 !important; }
+  .watercolor-content > img.responsive-full-image {
+    opacity:.55 !important;
+  }
+  .unified-hero .unified-copy,
+  .unified-hero .unified-copy.bandit-title {
+    color:#171914 !important;
+    background:transparent !important;
+  }
+  .unified-hero .unified-copy h1,
+  .unified-hero .unified-copy p {
+    color:#171914 !important;
+    text-shadow:0 1px 12px rgba(243,239,229,.85) !important;
+  }
+}
