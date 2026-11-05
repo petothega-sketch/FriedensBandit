@@ -1811,3 +1811,18 @@ body {font-size:max(16px,1.05vw);}
     text-shadow:0 1px 12px rgba(243,239,229,.85) !important;
   }
 }
+
+
+/* Desktop Figuren: unteres Aquarell ebenfalls am unteren Bildrand ausrichten */
+@media (min-width:821px) {
+  .watercolor-content > img.responsive-full-image {
+    display:block !important;
+    width:100% !important;
+    height:clamp(420px,42vw,720px) !important;
+    max-height:none !important;
+    flex:0 0 auto !important;
+    object-fit:cover !important;
+    object-position:center bottom !important;
+    opacity:.55 !important;
+  }
+}
