@@ -1869,3 +1869,50 @@ body {font-size:max(16px,1.05vw);}
     background:transparent !important;
   }
 }
+
+
+/* Desktop Figuren: alle unteren Textflaechen sicher ueber den Aquarellen */
+@media (min-width:821px) {
+  body .watercolor-content {
+    position:relative !important;
+    display:block !important;
+    isolation:isolate !important;
+    min-height:clamp(520px,52vw,800px) !important;
+    overflow:hidden !important;
+    background-color:#f3efe5 !important;
+  }
+  body .watercolor-content > img.responsive-full-image {
+    position:absolute !important;
+    top:0 !important;
+    left:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    width:100% !important;
+    height:100% !important;
+    min-height:100% !important;
+    object-fit:cover !important;
+    object-position:center bottom !important;
+    opacity:.55 !important;
+    z-index:0 !important;
+    pointer-events:none !important;
+  }
+  body .watercolor-content > .content-inner,
+  body .watercolor-content > .content-inner.values-inner,
+  body .watercolor-content .content-inner .content-block,
+  body .watercolor-content .content-inner .price-copy {
+    position:relative !important;
+    z-index:2 !important;
+    background:transparent !important;
+    background-color:transparent !important;
+    background-image:none !important;
+    box-shadow:none !important;
+  }
+  body .watercolor-content > .content-inner {
+    width:100% !important;
+    max-width:none !important;
+    min-height:clamp(520px,52vw,800px) !important;
+    box-sizing:border-box !important;
+    margin:0 !important;
+    padding:clamp(36px,5vw,90px) clamp(20px,4vw,96px) 64px !important;
+  }
+}
