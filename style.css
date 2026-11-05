@@ -1492,3 +1492,33 @@ main{
     border-radius:0 !important;
   }
 }
+
+
+/* Figuren-Ansicht: Startbild, Titel und Raster wieder als zusammenhaengender Hero.
+   Das Bild bleibt als IMG unverzerrt und unbeschnitten. */
+.unified-hero,.hero-values.unified-hero {
+ position:relative !important; display:block !important; min-height:100svh !important;
+ padding:0 !important; overflow:visible !important; color:white !important;
+ background-color:#f3efe5 !important;
+}
+.unified-hero > .responsive-full-image {display:block !important;position:relative !important;width:100% !important;height:auto !important;max-width:none !important;object-fit:contain !important;}
+.unified-hero .unified-copy,.unified-hero .unified-copy.bandit-title {
+ position:absolute !important;top:var(--figuren-title-top,25vh) !important;bottom:auto !important;
+ left:4.5% !important;right:4.5% !important;width:91% !important;
+ padding:0 !important;margin:0 !important;max-width:none !important;
+ color:#fff !important;background:transparent !important;z-index:2 !important;
+}
+.unified-hero .unified-copy h1,.unified-hero .unified-copy p {color:white !important;text-shadow:0 2px 15px rgba(0,0,0,.75) !important;}
+.unified-hero .unified-tabs,.hero-values .unified-tabs {
+ position:absolute !important;top:var(--figuren-tabs-top,calc(100svh - 82px)) !important;
+ bottom:auto !important;left:0 !important;right:0 !important;z-index:4 !important;
+}
+.unified-hero .responsive-menu-toggle {
+ position:absolute !important;top:var(--figuren-tabs-top,calc(100svh - 48px)) !important;
+ bottom:auto !important;left:0 !important;right:0 !important;z-index:5 !important;
+}
+@media (max-width:420px) {
+ .unified-hero .unified-copy,.unified-hero .unified-copy.bandit-title {
+   left:5% !important;right:5% !important;width:90% !important;padding:0 !important;
+ }
+}
