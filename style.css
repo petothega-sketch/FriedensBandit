@@ -1826,3 +1826,46 @@ body {font-size:max(16px,1.05vw);}
     opacity:.55 !important;
   }
 }
+
+
+/* Desktop Figuren: Aquarell als Hintergrund UNTER dem Text (2026-11-05) */
+@media (min-width:821px) {
+  .watercolor-content {
+    position:relative !important;
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    min-height:clamp(520px,52vw,800px) !important;
+    overflow:hidden !important;
+    padding:0 !important;
+    margin:0 !important;
+    background-color:#f3efe5 !important;
+  }
+  .watercolor-content > img.responsive-full-image {
+    position:absolute !important;
+    inset:0 !important;
+    display:block !important;
+    width:100% !important;
+    height:100% !important;
+    max-height:none !important;
+    object-fit:cover !important;
+    object-position:center bottom !important;
+    opacity:.55 !important;
+    z-index:0 !important;
+    pointer-events:none !important;
+  }
+  .watercolor-content > .content-inner,
+  .watercolor-values > .content-inner,
+  .watercolor-mediation > .content-inner,
+  .watercolor-moderation > .content-inner,
+  .watercolor-process > .content-inner,
+  .watercolor-prices > .content-inner {
+    position:relative !important;
+    z-index:1 !important;
+    width:100% !important;
+    min-height:0 !important;
+    margin:0 auto !important;
+    padding:clamp(36px,5vw,90px) clamp(20px,4vw,96px) 64px !important;
+    background:transparent !important;
+  }
+}
