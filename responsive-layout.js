@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const menuTop=Math.max(0,window.innerHeight-navHeight);
       hero.style.setProperty('--figuren-tabs-top',menuTop+'px');
       hero.style.setProperty('--figuren-title-top',Math.max(12,menuTop-copy.offsetHeight-24)+'px');
-      hero.style.minHeight=Math.max(window.innerHeight,img.getBoundingClientRect().height)+'px';
+      hero.style.setProperty('--figuren-image-bottom',navHeight+'px');
     });
   }
   window.addEventListener('resize',position);
