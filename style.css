@@ -1645,3 +1645,27 @@ body {font-size:max(16px,1.05vw);}
    left:5% !important;right:5% !important;width:90% !important;padding:0 !important;
  }
 }
+
+
+/* Test: oberer Bildrand wird bei Ueberhoehe beschnitten; Bildende liegt direkt an der Navigation. */
+.unified-hero,.hero-values.unified-hero {
+  height:100svh !important;
+  min-height:100svh !important;
+  max-height:100svh !important;
+  overflow:hidden !important;
+  position:relative !important;
+}
+.unified-hero > img.responsive-full-image {
+  position:absolute !important;
+  display:block !important;
+  left:0 !important;
+  right:0 !important;
+  top:auto !important;
+  bottom:var(--figuren-image-bottom,82px) !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:none !important;
+  min-height:0 !important;
+  object-fit:contain !important;
+  margin:0 !important;
+}
