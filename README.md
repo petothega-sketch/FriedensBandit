@@ -1,6 +1,20 @@
 # FriedensBandit – Version-responsive
-Neue gemeinsame Arbeitsversion für Desktop, Tablet und Mobil (06.11.2026).
-Fünf Hauptseiten, eine einheitliche CSS-Datei, kein Layout-JavaScript.
-Je Seite `<thema>-oben.png` und `<thema>-unten.png`; 10 Bildpositionen, 9 unterschiedliche Bildinhalte.
-Originale Texte unverändert übernommen. Ausgangsbilder und Varianten verbleiben in alten Branches.
-Noch offen: Sichtkontrolle der Bildausschnitte auf drei Bildschirmgrößen und rechtlich vollständiges Impressum / Datenschutzerklärung.
+
+Eine Arbeitsversion für Desktop, Tablet und Mobil; fünf Hauptseiten und eine zentrale CSS-Datei ohne Layout-JavaScript.
+
+## Bilder
+
+Die zehn verwendeten Bilder liegen unter `bilder/`, jeweils nach Motiv und Stil benannt (Fotografie / Aquarell). Sie sind einheitlich 1600 × 900 Pixel große WebP-Dateien.
+
+- Meine Werte: Herzmauer
+- Mediation: Waldkreis
+- Moderation: Waldweg
+- Teamentwicklung: Bergpfad mit roter Fahne
+- Preise: Sonnenaufgang über Berglandschaft
+
+Die Meer-/Steg-Bilder bleiben außerhalb dieser Arbeitsversion als Alternative zur Mediation erhalten.
+
+## Offen
+
+- Bildausschnitte und Lesbarkeit auf Desktop, Tablet und Mobil visuell prüfen.
+- Impressum und Datenschutz sind noch Platzhalter.
