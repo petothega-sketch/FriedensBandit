@@ -1,22 +1,6 @@
-# FriedensBandit – Website v0.1
-
-## Aktueller Stand
-- Startseite: `index.html`
-- Design: `style.css`
-- Impressum-Platzhalter: `impressum.html`
-
-## Noch Platzhalter
-- echte Charakter-/Porträtbilder
-- E-Mail-Adresse
-- Impressumsangaben
-- endgültiger Marken-/Domainname
-
-## Preislogik
-- Vergünstigt: 80 € / 60 Min.
-- Standard: 140 € / 60 Min.
-- Große Unternehmen / finanzstarke Auftraggeber: ab 250 € / 60 Min.
-- Wenn 80 € nicht möglich sind: Gespräch anbieten
-- Anfahrt: nach Absprache
-
-## Nächster Schritt
-GitHub Pages aktivieren und dann gemeinsam direkt an dieser Version weiterarbeiten.
+# FriedensBandit – Version-responsive
+Neue gemeinsame Arbeitsversion für Desktop, Tablet und Mobil (06.11.2026).
+Fünf Hauptseiten, eine einheitliche CSS-Datei, kein Layout-JavaScript.
+Je Seite `<thema>-oben.png` und `<thema>-unten.png`; 10 Bildpositionen, 9 unterschiedliche Bildinhalte.
+Originale Texte unverändert übernommen. Ausgangsbilder und Varianten verbleiben in alten Branches.
+Noch offen: Sichtkontrolle der Bildausschnitte auf drei Bildschirmgrößen und rechtlich vollständiges Impressum / Datenschutzerklärung.
