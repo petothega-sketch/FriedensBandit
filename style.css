@@ -866,3 +866,6 @@ main{
   display:block;
   clear:both;
 }
+
+/* Footer-Porträt */
+.compact-footer .footer-symbol { width: 88px; height: auto; object-fit: contain; display: block; margin: 0 0 12px; }
