@@ -54,3 +54,15 @@ a{color:inherit}
 .story h2{font-size:clamp(2rem,9vw,3.2rem)}.story p{font-size:1.04rem;line-height:1.58}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Angebote: gleiches Honorar, klare Zeitfenster */
+.offer-content{max-width:800px}
+.offer-details,.offer-contact{margin-top:30px;padding:24px 28px;background:rgba(243,239,229,.80);border:1px solid rgba(38,55,45,.22);border-radius:14px;backdrop-filter:blur(3px)}
+.story .offer-details .eyebrow{margin:0 0 6px}
+.story .offer-price{font-size:clamp(1.8rem,3.3vw,2.7rem);font-weight:750;line-height:1.2;margin:4px 0 15px}
+.offer-price span{display:block;font-size:clamp(1rem,1.45vw,1.2rem);font-weight:500;margin-top:7px}
+.story .offer-note{font-size:.99rem;margin-top:18px}
+.offer-contact h3{font-size:clamp(1.4rem,2vw,1.9rem);margin:0 0 12px}
+.offer-button{display:inline-block;background:#26372d;color:white;text-decoration:none;padding:14px 20px;border-radius:9px;font-weight:700;margin-top:4px}
+.offer-button:hover{background:#49654e}
+@media(max-width:600px){.offer-details,.offer-contact{padding:18px 17px}}
