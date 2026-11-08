@@ -1,5 +1,5 @@
 name: Vorschau Clean + Figuren + Responsive + Angebote
-# Neuveröffentlichung nach Aktualisierung des Branches Version-angebote
+# Neuveröffentlichung mit Angebotsstand 0810c046 (Preise und solidarische Beiträge)
 
 on:
   push:
