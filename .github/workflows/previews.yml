@@ -1,5 +1,5 @@
 name: Vorschau Clean + Figuren + Responsive + Angebote
-# Angebotsstand 5f9d0e8 – ermäßigte Preise mit begrenztem Kontingent
+# Angebotsstand 88b7f684 – doppelte Preistexte bereinigt
 
 on:
   push:
