@@ -1,4 +1,4 @@
-name: Vorschau Clean + Figuren + Responsive
+name: Vorschau Clean + Figuren + Responsive + Angebote
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - Version-clean
       - Version-figuren
       - Version-responsive
+      - Version-angebote
       - main
   workflow_dispatch:
 
@@ -40,15 +41,23 @@ jobs:
           ref: Version-responsive
           path: responsive
 
+      - name: Angebote-Version holen
+        uses: actions/checkout@v4
+        with:
+          ref: Version-angebote
+          path: angebote
+
       - name: Vorschau-Seiten zusammenbauen
         run: |
-          mkdir -p public/clean public/figuren public/responsive
+          mkdir -p public/clean public/figuren public/responsive public/angebote
           cp -a clean/. public/clean/
           cp -a figuren/. public/figuren/
           cp -a responsive/. public/responsive/
+          cp -a angebote/. public/angebote/
           rm -rf public/clean/.git public/clean/.github
           rm -rf public/figuren/.git public/figuren/.github
           rm -rf public/responsive/.git public/responsive/.github
+          rm -rf public/angebote/.git public/angebote/.github
 
           cat > public/index.html <<'EOF'
           <!doctype html>
@@ -69,6 +78,7 @@ jobs:
             <a href="./clean/">Clean-Version →</a>
             <a href="./figuren/">Figuren-Version →</a>
             <a href="./responsive/">Responsive-Version →</a>
+            <a href="./angebote/">Angebote – Arbeitsversion →</a>
           </body>
           </html>
           EOF
