@@ -1,18 +1,25 @@
-name: Vorschau Clean + Figuren + Responsive
+name: Vorschau Clean + Figuren + Responsive + Angebote
+# Angebotsstand 88b7f684 – doppelte Preistexte bereinigt
+
 on:
   push:
     branches:
       - Version-clean
       - Version-figuren
       - Version-responsive
+      - Version-angebote
+      - main
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: friedensbandit-previews
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,37 +29,73 @@ jobs:
         with:
           ref: Version-clean
           path: clean
+
       - name: Figuren-Version holen
         uses: actions/checkout@v4
         with:
           ref: Version-figuren
           path: figuren
+
       - name: Responsive-Version holen
         uses: actions/checkout@v4
         with:
           ref: Version-responsive
           path: responsive
+
+      - name: Angebote-Version holen
+        uses: actions/checkout@v4
+        with:
+          ref: Version-angebote
+          path: angebote
+
       - name: Vorschau-Seiten zusammenbauen
         run: |
-          mkdir -p public/clean public/figuren public/responsive
+          mkdir -p public/clean public/figuren public/responsive public/angebote
           cp -a clean/. public/clean/
           cp -a figuren/. public/figuren/
           cp -a responsive/. public/responsive/
+          cp -a angebote/. public/angebote/
           rm -rf public/clean/.git public/clean/.github
           rm -rf public/figuren/.git public/figuren/.github
           rm -rf public/responsive/.git public/responsive/.github
+          rm -rf public/angebote/.git public/angebote/.github
+
           cat > public/index.html <<'EOF'
-          <!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>FriedensBandit – Vorschauen</title><style>body{font-family:system-ui,sans-serif;max-width:760px;margin:80px auto;padding:0 24px;background:#f3efe5;color:#171914}h1{font-size:3rem;margin-bottom:2rem}a{display:block;padding:22px 0;border-top:1px solid #bbb;color:inherit;text-decoration:none;font-size:1.5rem;font-weight:700}a:last-child{border-bottom:1px solid #bbb}</style></head><body><h1>FriedensBandit</h1><a href="./responsive/">Responsive-Version →</a><a href="./clean/">Clean-Version →</a><a href="./figuren/">Figuren-Version →</a></body></html>
+          <!doctype html>
+          <html lang="de">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>FriedensBandit – Vorschauen</title>
+            <style>
+              body{font-family:system-ui,sans-serif;max-width:760px;margin:80px auto;padding:0 24px;background:#f3efe5;color:#171914}
+              h1{font-size:3rem;margin-bottom:2rem}
+              a{display:block;padding:22px 0;border-top:1px solid #bbb;color:inherit;text-decoration:none;font-size:1.5rem;font-weight:700}
+              a:last-child{border-bottom:1px solid #bbb}
+            </style>
+          </head>
+          <body>
+            <h1>FriedensBandit</h1>
+            <a href="./clean/">Clean-Version →</a>
+            <a href="./figuren/">Figuren-Version →</a>
+            <a href="./responsive/">Responsive-Version →</a>
+            <a href="./angebote/">Angebote – Arbeitsversion →</a>
+          </body>
+          </html>
           EOF
+
       - name: GitHub Pages vorbereiten
         uses: actions/configure-pages@v5
+
       - name: Seitenpaket hochladen
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Veröffentlichen
+        id: deployment
         uses: actions/deploy-pages@v4
