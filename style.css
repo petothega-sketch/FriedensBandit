@@ -69,4 +69,4 @@ a{color:inherit}
 
 .offer-content .offer-steps{margin-top:36px;max-width:800px}
 .offer-steps h3{font-size:clamp(1.5rem,2.3vw,2.2rem);margin:0 0 16px}
-.hero-copy .hero-quote{font-style:italic;margin:0 0 10px;font-size:clamp(1.15rem,1.9vw,1.7rem)}
+.hero-copy .hero-quote{font-style:italic;margin:0;font-size:clamp(1.15rem,1.9vw,1.7rem)}
